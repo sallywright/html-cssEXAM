@@ -123,10 +123,10 @@ section.companies div.container img {
   width: 15%;
   height: 2.5rem;
 }
-
+/* 
 #boom {
   display: none;
-}
+} */
 
 section.nfts div.container {
   padding: 3.5rem;
@@ -300,16 +300,17 @@ div.copyright {
     height: 25rem;
     width: 25rem;
   }
-  section.signup:last-of-type div.container {
-    position: relative;
-  }
+
   section.signup:last-of-type div.container img {
-    /* top: 10rem; */
-    bottom: -100rem;
-    position: absolute;
+    top: 9rem;
+
     right: -140px;
     height: 23rem;
     width: 23rem;
+  }
+
+  section.signup:last-of-type div.container {
+    height: 29rem;
   }
 
   section.signup:last-of-type div.container div.text h1 {
@@ -362,13 +363,10 @@ div.copyright {
     display: none;
   }
 
-  #boomerang {
-    display: none;
-  }
-
+  /* 
   #boom {
     display: block;
-  }
+  } */
 
   section.nfts div.container {
     padding: 2rem 0rem 2rem 1.5rem;
