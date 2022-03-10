@@ -16,6 +16,10 @@ nav div.container div.navlogo {
   max-width: 100%;
 }
 
+#menu {
+  display: none;
+}
+
 nav div.container div.navlinks a {
   margin: 0 0.5rem;
   text-decoration: none;
@@ -118,6 +122,10 @@ section.companies div.container {
 section.companies div.container img {
   width: 15%;
   height: 2.5rem;
+}
+
+#boom {
+  display: none;
 }
 
 section.nfts div.container {
@@ -250,10 +258,15 @@ div.copyright {
     padding: 1.5rem;
   }
   nav div.container div.navlogo img {
-    max-width: 50%;
+    max-width: 70%;
   }
 
-  /* ------for now no hamburger menu, will add later---- */
+  #menu {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+
   nav div.container div.navlinks {
     display: none;
   }
@@ -287,9 +300,13 @@ div.copyright {
     height: 25rem;
     width: 25rem;
   }
-
+  section.signup:last-of-type div.container {
+    position: relative;
+  }
   section.signup:last-of-type div.container img {
-    top: 9rem;
+    /* top: 10rem; */
+    bottom: -100rem;
+    position: absolute;
     right: -140px;
     height: 23rem;
     width: 23rem;
@@ -317,18 +334,22 @@ div.copyright {
   }
 
   section.hurry div.container {
-    background-position: -270px;
+    background-position: -200px;
     margin: 2rem 0;
     border-radius: 0;
-    padding: 4.5rem 1rem 1rem 2rem;
+    padding: 4.5rem 0rem 1rem 1remrem;
     background-size: cover;
     background-repeat: no-repeat;
-    /* make gradient with more colors */
   }
 
   section.hurry div.container h1 {
     font-size: 1.7rem;
     font-weight: 500;
+  }
+
+  section.companies div.container {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
   }
 
   section.companies div.container img {
@@ -339,6 +360,14 @@ div.copyright {
 
   section.companies div.container img:last-child {
     display: none;
+  }
+
+  #boomerang {
+    display: none;
+  }
+
+  #boom {
+    display: block;
   }
 
   section.nfts div.container {
