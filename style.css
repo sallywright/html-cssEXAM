@@ -125,10 +125,13 @@ section.nfts div.container {
 }
 
 section.nfts div.container a {
-  color: black;
+  color: rgb(112, 110, 110);
+  font-weight: 500;
 }
 
-/* --------NFT cards should span through whole width---------- */
+section.nfts p {
+  color: rgb(112, 110, 110);
+}
 
 section.nfts div.container div.cards {
   position: relative;
@@ -146,7 +149,7 @@ section.nfts div.container div.cards div.card {
 section.nfts div.container div.cards div.card div.textspecs {
   background-color: rgb(233, 232, 232);
   padding: 1rem;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 15px 15px;
   margin-top: -6px;
 }
 
@@ -196,6 +199,7 @@ footer div.container {
   padding: 2.5rem 3.5rem;
   display: flex;
   justify-content: space-between;
+  color: rgb(112, 110, 110);
 }
 
 footer div.container div.endicons div.socmedia {
@@ -218,7 +222,6 @@ footer div.container div.endlinks {
 
 footer div.container div.endlinks div {
   width: 15%;
-  color: rgb(112, 110, 110);
   margin: 0 1.5rem 0 1.5rem;
   display: flex;
   flex-direction: column;
@@ -264,12 +267,17 @@ div.copyright {
     height: 100%;
   }
 
-  section.signup:last-of-type div.container {
-    padding-bottom: 0;
-  }
-
   section.signup div.container div.text {
     margin-right: 0;
+  }
+
+  section.signup:last-of-type div.container {
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  section.signup:last-of-type div.text {
+    padding-bottom: 2rem;
   }
 
   section.signup div.container img {
@@ -281,8 +289,10 @@ div.copyright {
   }
 
   section.signup:last-of-type div.container img {
-    top: 10rem;
+    top: 9rem;
     right: -140px;
+    height: 23rem;
+    width: 23rem;
   }
 
   section.signup:last-of-type div.container div.text h1 {
@@ -292,13 +302,13 @@ div.copyright {
 
   section.signup div.container h1 {
     margin-top: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: normal;
   }
 
   section.signup div.container h3 {
     margin-bottom: 0;
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   section.signup div.container button {
@@ -307,9 +317,18 @@ div.copyright {
   }
 
   section.hurry div.container {
-    background-position: center;
+    background-position: -270px;
+    margin: 2rem 0;
+    border-radius: 0;
+    padding: 4.5rem 1rem 1rem 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
     /* make gradient with more colors */
-    /* make width full */
+  }
+
+  section.hurry div.container h1 {
+    font-size: 1.7rem;
+    font-weight: 500;
   }
 
   section.companies div.container img {
@@ -317,11 +336,44 @@ div.copyright {
     height: 2.5rem;
     margin: 1rem;
   }
+
   section.companies div.container img:last-child {
     display: none;
   }
 
   section.nfts div.container {
-    padding: 2rem 1.5rem;
+    padding: 2rem 0rem 2rem 1.5rem;
+  }
+
+  section.nfts div.container h1,
+  p {
+    margin-right: 1.5rem;
+  }
+
+  footer div.container {
+    flex-flow: row wrap;
+    padding: 2.5rem 1.5rem;
+  }
+
+  footer div.container div.endlinks {
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: -1rem;
+  }
+
+  footer div.container div.endlinks div {
+    width: 30%;
+    margin: 0 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.copyright {
+    margin: 3rem 1rem 3rem 1rem;
+    color: rgb(141, 138, 138);
+  }
+
+  div.copyright p:last-of-type {
+    display: none;
   }
 }
