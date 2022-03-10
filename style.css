@@ -1,0 +1,406 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+nav div.container {
+  padding: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div.container div.navlogo {
+  max-width: 100%;
+}
+
+#menu {
+  display: none;
+}
+
+nav div.container div.navlinks a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+nav div.container div.navlinks a:nth-last-child(1) {
+  color: #ff3998;
+}
+
+section.signup div.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 10% 2.5rem 4.5rem;
+  line-height: 2rem;
+  position: relative;
+}
+
+section.signup div.container img {
+  height: 35rem;
+  width: 35rem;
+}
+
+section.signup:last-of-type div.container {
+  border-bottom: solid 1px rgb(233, 232, 232);
+  border-top: solid 1px rgb(233, 232, 232);
+  margin: 0 2.5rem;
+  padding-bottom: 0;
+}
+
+section.signup div.container div.text {
+  margin-right: 5rem;
+}
+
+section.signup:last-of-type div.container div.text {
+  margin-right: 2rem;
+}
+
+section.signup:last-of-type div.container div.text h1 {
+  font-size: 4rem;
+}
+
+section.signup div.container h3 {
+  color: #ff3998;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+section.signup div.container h1 {
+  width: 100%;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  white-space: normal;
+}
+
+section.signup div.container p {
+  color: rgb(112, 110, 110);
+}
+
+section.signup div.container button {
+  color: black;
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(to right, #b13ad5, #d56b3a, #eb1717, #c5d53a);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  border-radius: 35px;
+  padding: 1rem 2rem;
+}
+
+section.hurry {
+  background-color: white;
+}
+
+section.hurry div.container {
+  margin: 0 2rem;
+  background-image: url(/assets/background.svg);
+  background-size: cover;
+  background-repeat: none;
+  padding: 6.5rem 1.5rem 2.5rem 3.5rem;
+  border-radius: 0 0 15px 15px;
+}
+
+section.hurry h1 {
+  font-weight: 400;
+}
+
+section.companies div.container {
+  margin: 4rem 0 4rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+section.companies div.container img {
+  width: 15%;
+  height: 2.5rem;
+}
+/* 
+#boom {
+  display: none;
+} */
+
+section.nfts div.container {
+  padding: 3.5rem;
+}
+
+section.nfts div.container a {
+  color: rgb(112, 110, 110);
+  font-weight: 500;
+}
+
+section.nfts p {
+  color: rgb(112, 110, 110);
+}
+
+section.nfts div.container div.cards {
+  position: relative;
+  margin-top: 3rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+section.nfts div.container div.cards div.card {
+  margin: 0 1rem 0 1rem;
+}
+
+section.nfts div.container div.cards div.card div.textspecs {
+  background-color: rgb(233, 232, 232);
+  padding: 1rem;
+  border-radius: 0 0 15px 15px;
+  margin-top: -6px;
+}
+
+section.nfts div.container div.cards div.card div.image-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.nfts div.container div.cards div.card div.image-text p {
+  line-height: 0.1;
+}
+
+section.nfts div.container div.cards div.card div.image-text p.series {
+  color: orange;
+  font-size: 0.6rem;
+}
+
+section.nfts div.container div.cards div.card div.image-text p.topbid {
+  color: rgb(112, 110, 110);
+  font-size: 0.6rem;
+}
+
+section.nfts div.container div.cards div.card div.name-price {
+  width: 100%;
+  display: flex;
+}
+
+section.nfts div.container div.cards div.card div.name-price p.name {
+  flex: 2;
+}
+
+section.nfts div.container div.cards div.card p.price {
+  display: flex;
+  margin-left: 1rem;
+}
+section.nfts div.container div.cards div.card p.price img {
+  margin: 0 0.2rem;
+}
+section.nfts div.container div.cards div.card div.info {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(112, 110, 110);
+  font-size: 0.9rem;
+}
+
+footer div.container {
+  padding: 2.5rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(112, 110, 110);
+}
+
+footer div.container div.endicons div.socmedia {
+  display: flex;
+  align-items: space-evenly;
+}
+
+footer div.container div.endicons div.socmedia img {
+  width: 17px;
+  height: 18px;
+  margin: 0.5rem;
+}
+
+footer div.container div.endlinks {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+footer div.container div.endlinks div {
+  width: 15%;
+  margin: 0 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+footer div.container div.endlinks h3 {
+  font-size: 1rem;
+}
+
+footer div.container div.endlinks div a {
+  text-decoration: none;
+  color: rgb(112, 110, 110);
+  line-height: 2rem;
+}
+
+div.copyright {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 3.5rem 3rem 3.5rem;
+  color: rgb(141, 138, 138);
+}
+
+/* ----------------mobile version-------------------- */
+
+@media screen and (max-width: 768px) {
+  nav div.container {
+    padding: 1.5rem;
+  }
+  nav div.container div.navlogo img {
+    max-width: 70%;
+  }
+
+  #menu {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+
+  nav div.container div.navlinks {
+    display: none;
+  }
+
+  section.signup div.container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 2.5rem 30% 2.5rem 1.5rem;
+    line-height: 1.5rem;
+    height: 100%;
+  }
+
+  section.signup div.container div.text {
+    margin-right: 0;
+  }
+
+  section.signup:last-of-type div.container {
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  section.signup:last-of-type div.text {
+    padding-bottom: 2rem;
+  }
+
+  section.signup div.container img {
+    position: absolute;
+    top: 1rem;
+    right: -200px;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  section.signup:last-of-type div.container img {
+    top: 9rem;
+
+    right: -140px;
+    height: 23rem;
+    width: 23rem;
+  }
+
+  section.signup:last-of-type div.container {
+    height: 29rem;
+  }
+
+  section.signup:last-of-type div.container div.text h1 {
+    font-size: 2.5rem;
+    line-height: normal;
+  }
+
+  section.signup div.container h1 {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    line-height: normal;
+  }
+
+  section.signup div.container h3 {
+    margin-bottom: 0;
+    font-size: 0.7rem;
+  }
+
+  section.signup div.container button {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  section.hurry div.container {
+    background-position: -200px;
+    margin: 2rem 0;
+    border-radius: 0;
+    padding: 4.5rem 0rem 1rem 1remrem;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  section.hurry div.container h1 {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  section.companies div.container {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+
+  section.companies div.container img {
+    width: 35%;
+    height: 2.5rem;
+    margin: 1rem;
+  }
+
+  section.companies div.container img:last-child {
+    display: none;
+  }
+
+  /* 
+  #boom {
+    display: block;
+  } */
+
+  section.nfts div.container {
+    padding: 2rem 0rem 2rem 1.5rem;
+  }
+
+  section.nfts div.container h1,
+  p {
+    margin-right: 1.5rem;
+  }
+
+  footer div.container {
+    flex-flow: row wrap;
+    padding: 2.5rem 1.5rem;
+  }
+
+  footer div.container div.endlinks {
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: -1rem;
+  }
+
+  footer div.container div.endlinks div {
+    width: 30%;
+    margin: 0 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.copyright {
+    margin: 3rem 1rem 3rem 1rem;
+    color: rgb(141, 138, 138);
+  }
+
+  div.copyright p:last-of-type {
+    display: none;
+  }
+}
