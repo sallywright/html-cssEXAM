@@ -29,10 +29,9 @@ nav div.container div.navlinks a:nth-last-child(1) {
 section.signup div.container {
   display: flex;
   justify-content: space-between;
-  padding: 2.5rem 10% 2.5rem 4.5rem;
+  padding: 3.5rem 10% 2.5rem 4.5rem;
   line-height: 2rem;
   position: relative;
-  /* height: 100%; */
 }
 
 section.signup div.container img {
@@ -42,6 +41,7 @@ section.signup div.container img {
 
 section.signup:last-of-type div.container {
   border-bottom: solid 1px rgb(233, 232, 232);
+  border-top: solid 1px rgb(233, 232, 232);
   margin: 0 2.5rem;
   padding-bottom: 0;
 }
@@ -88,10 +88,7 @@ section.signup div.container button {
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #fff inset;
   border-radius: 35px;
-  /* line-height: 3.5rem; */
   padding: 1rem 2rem;
-  /* font-size: 1rem; */
-  /* text-align: center; */
 }
 
 section.hurry {
@@ -130,6 +127,8 @@ section.nfts div.container {
 section.nfts div.container a {
   color: black;
 }
+
+/* --------NFT cards should span through whole width---------- */
 
 section.nfts div.container div.cards {
   position: relative;
@@ -239,4 +238,90 @@ div.copyright {
   justify-content: space-between;
   margin: 3rem 3.5rem 3rem 3.5rem;
   color: rgb(141, 138, 138);
+}
+
+/* ----------------mobile version-------------------- */
+
+@media screen and (max-width: 768px) {
+  nav div.container {
+    padding: 1.5rem;
+  }
+  nav div.container div.navlogo img {
+    max-width: 50%;
+  }
+
+  /* ------for now no hamburger menu, will add later---- */
+  nav div.container div.navlinks {
+    display: none;
+  }
+
+  section.signup div.container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 2.5rem 30% 2.5rem 1.5rem;
+    line-height: 1.5rem;
+    height: 100%;
+  }
+
+  section.signup:last-of-type div.container {
+    padding-bottom: 0;
+  }
+
+  section.signup div.container div.text {
+    margin-right: 0;
+  }
+
+  section.signup div.container img {
+    position: absolute;
+    top: 1rem;
+    right: -200px;
+    height: 25rem;
+    width: 25rem;
+  }
+
+  section.signup:last-of-type div.container img {
+    top: 10rem;
+    right: -140px;
+  }
+
+  section.signup:last-of-type div.container div.text h1 {
+    font-size: 2.5rem;
+    line-height: normal;
+  }
+
+  section.signup div.container h1 {
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    line-height: normal;
+  }
+
+  section.signup div.container h3 {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  section.signup div.container button {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  section.hurry div.container {
+    background-position: center;
+    /* make gradient with more colors */
+    /* make width full */
+  }
+
+  section.companies div.container img {
+    width: 35%;
+    height: 2.5rem;
+    margin: 1rem;
+  }
+  section.companies div.container img:last-child {
+    display: none;
+  }
+
+  section.nfts div.container {
+    padding: 2rem 1.5rem;
+  }
 }
